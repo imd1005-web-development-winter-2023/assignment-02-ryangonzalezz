@@ -1,3 +1,116 @@
+.Menus {
+  overflow:hidden;
+  position:static;
+  top:0;
+  width:100%;
+}
+
+.Menus ul{
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding:23px;
+}
+
+ul li {
+  flex-basis: 250px;
+}
+
+.PageHeader {
+  background-color: #bd3838;
+  color: #ffffff;
+  border-radius: 20px;
+  padding:10px;
+  border: 2px transparent solid;
+}
+
+header{
+  background-color: #b34bd3
+  margin: none;
+  height:120px;
+  width:100%;
+  overflow:hidden;
+  position:static;
+  top:0;
+}
+
+.logo {
+  width: 100px;
+  float: left;
+  padding:10px;
+  overflow:hidden;
+  position:static;
+}
+
 /*
-  CSS File
+  CONTENT
 */
+
+body {
+  color: #003049;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+header h2 {
+  padding: 2rem;
+  color: #000000;
+  text-align: left;
+  font-size: 3rem;
+
+  background-color: #ffffff;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main section {
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #202020;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.logo2 {
+  width: 100px;
+  padding:10px;
+  overflow:hidden;
+  position:static;
+}
+
+footer p {
+  padding: 2rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/*
+  SCREEN READER UTILITY
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
