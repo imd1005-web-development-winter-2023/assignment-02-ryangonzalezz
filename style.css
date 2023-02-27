@@ -1,3 +1,5 @@
+/* Containers */
+
 .container--large {
   max-width: 1500px;
   padding-left: 2rem;
@@ -22,14 +24,12 @@
   align-items: center;
 }
 
-.header--bar h2 {
-  text-align: left;
-  text-size-adjust: 50px;
-}
-
 .header--bar--logo {
-  height: 3.5rem;
-  width: 3.5rem;
+  width: 100px;
+  float: left;
+  padding:10px;
+  overflow:hidden;
+  position:static;
 }
 
 .header--bar--nav ul {
@@ -52,42 +52,26 @@
   text-decoration: underline;
 }
 
-.logo {
-  width: 100px;
-  float: left;
-  padding:10px;
-  overflow:hidden;
-  position:static;
-}
-
 body {
   color: #003049;
   font-family: sans-serif;
   background-color: #ffffff;
 }
 
+/*footer section */
 
 footer {
-  background-color: #202020;
-  padding: 2rem;
-  text-align: center;
-  font-weight: 800;
-  color: rgb(255, 255, 255);
-}
-
-.logo2 {
-  width: 100px;
-  padding:10px;
-  overflow:hidden;
-  position:static;
-}
-
-footer p {
-  padding: 2rem;
+  padding: 4rem 0 4rem 0;
   background-color: #000000;
-  color: #ffffff;
+  color: #e0e1dd;
   text-align: center;
-  font-size: 1rem;
-  width: 100%;
 }
 
+.footer--logo {
+  display: block;
+  width: 100px;
+  padding: 2rem 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
