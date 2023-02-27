@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 
-/* header section */
+/* Header Section */
 
 .header {
   background-color: #ffffff;
@@ -24,8 +24,12 @@
   align-items: center;
 }
 
+.header--bar h2 {
+  font-size: 3.5rem;
+}
+
 .header--bar--logo {
-  width: 100px;
+  width: 80px;
   float: left;
   padding:10px;
   overflow:hidden;
@@ -34,17 +38,18 @@
 
 .header--bar--nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 
   list-style-type: none;
 }
 
 .header--bar--nav ul li {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .header--bar--nav ul li a {
-  color: #e0e1dd;
+  color: #b3b3b3;
   text-decoration: none;
 }
 
@@ -52,13 +57,102 @@
   text-decoration: underline;
 }
 
-body {
-  color: #003049;
-  font-family: sans-serif;
-  background-color: #ffffff;
+/* Hero Section */
+
+.hero {
+  background-color: #000000;
+  color: #e0e1dd;
+  padding: 7rem 0 8rem 0;
 }
 
-/*footer section */
+.hero--flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero--flex--image {
+  flex-basis: 40%;
+  height: 30rem;
+  background-color: #fff;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero--flex--content {
+  margin-left: 10rem;
+  width: 60%;
+}
+
+.hero--flex--content h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero--flex--content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Ranking Section */
+
+.rankings {
+  font-size: 2rem;
+  padding: 4rem;
+  color: #000000;
+}
+
+.rankings .container--large h3, h2 {
+  display: inline;
+}
+
+.rankings .container--large h3 {
+  color: #b3b3b3;
+  font-size: 3rem;
+}
+
+.top10 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 90px;
+}
+
+table thead tr th {
+  font-size: 1.5rem;
+  color: #b10707;
+  text-align: center;
+}
+
+table tbody tr td {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sponsors {
+  width: 70px;
+}
+
+.mains {
+  width: 70px;
+}
+
+.flags {
+  width: 70px;
+}
+/* Footer Section */
 
 footer {
   padding: 4rem 0 4rem 0;
