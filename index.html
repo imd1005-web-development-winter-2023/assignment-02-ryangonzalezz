@@ -1,29 +1,233 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    <!-- Set the page title -->
-    <title>Assignment 02</title>
-
-    <!-- Set the charset we're using to UTF-8 -->
+    <title>The Graveyard</title>
     <meta charset="UTF-8" />
-
-    <!-- Set the screens default zoom / scale to 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Specifies the document mode for Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- We are using a CSS Reset file to standardize browser default css -->
     <link rel="stylesheet" href="reset.css" />
-
-    <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon shortcut" href="Website logo.png">
   </head>
+
+  <header>
+    <div class="header">
+      <div class="container--large">
+        <div class="header--bar">
+
+          <a href="index.html"><img class="header--bar--logo" src="Website logo.png" alt="Logo of game"></a>
+      
+            <h2>The Graveyard</h2>
+
+          <nav class="header--bar--nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Players</a></li>
+              <li><a href="#">Rankings</a></li>
+              <li><a href="#">Vods</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
   <body>
-    <!--
+    
+    <main>
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+      <setion>
+        <div class="hero">
+          <div class="container--large">
+            <div class="hero--flex">
 
-    -->
-  </body>
+              <img class="hero--flex--image" src="graph.jpeg" alt="Picture of graph"/>
+
+              <div class="hero--flex--content">
+
+                <h2>All The Stats In One Place</h2>
+                
+                <p>
+                  The Graveyard is a massive database, containing hundreds
+                  of thousands of Super Smash Brothers Ultimate results. 
+                  With how quickly this already huge esports scene is, it
+                  is imperative that it all be compiled in one place. Check
+                  out player statistics, results of recent tournament events, 
+                  and even the current ranking for the top 50 players.
+                </p>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </setion>
+
+      <section>
+          <div class="rankings">
+            <div class="container--large">
+              <h3>Player Rankings:</h3>
+              <h2>Top 10</h2>
+              <div class="container--small">
+
+                <div class="top10">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Sponsor</th>
+                        <th>Tag</th>
+                        <th>Main</th>
+                        <th>Region</th>
+                      </tr>
+                    </thead>
+                  <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>-</td>
+                        <td>MkLeo</td>
+                        <td><img class="mains" src="Byleth.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="Mexico flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><img class="sponsors" src="FaZe.png" alt="sponsorship company"/></td>
+                        <td>Sparg0</td>
+                        <td><img class="mains" src="Cloud.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="Mexico flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><img class="sponsors" src="Solary.png" alt="sponsorship company"/></td>
+                        <td>Gluttony</td>
+                        <td><img class="mains" src="Wario.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="France flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><img class="sponsors" src="Moist.png" alt="sponsorship company"/></td>
+                        <td>Light</td>
+                        <td><img class="mains" src="Fox.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="USA flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td><img class="sponsors" src="TSM.png" alt="sponsorship company"/></td>
+                        <td>Tweek</td>
+                        <td><img class="mains" src="Diddy.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="USA flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><img class="sponsors" src="Liquid.png" alt="sponsorship company"/></td>
+                        <td>Riddles</td>
+                        <td><img class="mains" src="Kazuya.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="Canada flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><img class="sponsors" src="Liquid.png" alt="sponsorship company"/></td>
+                        <td>Dabuz</td>
+                        <td><img class="mains" src="Rosalina.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="USA flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td><img class="sponsors" src="Moist.png" alt="sponsorship company"/></td>
+                        <td>Kola</td>
+                        <td><img class="mains" src="Roy.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="USA flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td><img class="sponsors" src="Spacestation.png" alt="sponsorship company"/></td>
+                        <td>Zomba</td>
+                        <td><img class="mains" src="ROB.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="USA flag.png" alt="country of origin"/></td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td><img class="sponsors" src="Luminosity.png" alt="sponsorship company"/></td>
+                        <td>Maister</td>
+                        <td><img class="mains" src="MrGame&Watch.png" alt="main character used in tournament"/></td>
+                        <td><img class="flags" src="Mexico flag.png" alt="country of origin"/></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <a class="button" href="#">View more</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="tournaments">
+          <div class="container--small">
+            <h2>Recent Tournaments</h2>
+            <h3>See more</h3>
+
+            <ul class="tournament--results">
+              <li>
+                <img class="tournament--result--images" src="Elite Monthly.png" alt="Logo of tournament"/>
+                <h4>Elite Monthly Series V : Road To GOM</h4>
+                <p>February 25th, 2023</p>
+                <dl><p>Montréal, QC</p></dl>
+                <dl><p>70 Attendees</p></dl>
+              </li>
+              <li>
+                <img class="tournament--result--images" src="LVL UP EXPO.png" alt="Logo of tournament"/>
+                <h4>LVL UP EXPO 2023</h4>
+                <p>February 17th-19th, 2023</p>
+                <dl><p>Las Vegas, NV</p></dl>
+                <dl><p>739 Attendees</p></dl>
+              </li>
+              <li>
+                <img class="tournament--result--images" src="Coinbox.png" alt="Logo of tournament"/>
+                <h4>The Coinbox #49 (Ultimate)</h4>
+                <p>February 15th, 2023</p>
+                <dl><p>Online</p></dl>
+                <dl><p>783</p></dl>
+              </li>
+              <li>
+                <img class="tournament--result--images" src="Kagaribi.png" alt="Logo of tournament"/>
+                <h4>Kagaribi 9</h4>
+                <p>February 4th-5th, 2023</p>
+                <dl><p>Tokyo, JP</p></dl>
+                <dl><p>1,870 Attendees</p></dl>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact--us">
+      <div class="form--grid">
+        <h2>What should we add?</h2>
+        <div class="contact--grid">
+          <div class="part1">
+            <ul>
+              <li><input type="text" placeholder="Full Name"></li>
+              <li><input type="text" placeholder="Email"></li>
+              <li><input type="text" placeholder="Type your message here"></li>
+            </ul>
+          </div>
+            <div class="buttoncontainer">
+              <button class="button" type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<footer>
+    <img class="footer--logo" src="logo.png" alt="Logo of game"/>
+    
+      <p>© Copyright 2018-2023, Dead by Design. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
