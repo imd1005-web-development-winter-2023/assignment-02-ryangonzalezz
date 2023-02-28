@@ -8,6 +8,14 @@
   margin-right: auto;
 }
 
+.container--small {
+  max-width: 850px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Header Section */
 
 .header {
@@ -49,7 +57,7 @@
 }
 
 .header--bar--nav ul li a {
-  color: #b3b3b3;
+  color: #a2aebb;
   text-decoration: none;
 }
 
@@ -60,9 +68,12 @@
 /* Hero Section */
 
 .hero {
-  background-color: #000000;
-  color: #e0e1dd;
-  padding: 7rem 0 8rem 0;
+  background-image: url(Light\ background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: #000000;
+  padding: 6rem 0 6rem 0;
 }
 
 .hero--flex {
@@ -76,14 +87,14 @@
 .hero--flex--image {
   flex-basis: 40%;
   height: 30rem;
-  background-color: #fff;
+  background-color: #ff5e5e;
 
   object-fit: cover;
   border-radius: 10px;
 }
 
 .hero--flex--content {
-  margin-left: 10rem;
+  margin-left: 6rem;
   width: 60%;
 }
 
@@ -97,6 +108,7 @@
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 /* Ranking Section */
@@ -104,7 +116,11 @@
 .rankings {
   font-size: 2rem;
   padding: 4rem;
-  color: #000000;
+  color: #ffffff;
+  /* Learned from https://www.w3schools.com/howto/howto_css_parallax.asp */
+  background-image: url(Dark\ background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rankings .container--large h3, h2 {
@@ -112,7 +128,7 @@
 }
 
 .rankings .container--large h3 {
-  color: #b3b3b3;
+  color: #a2aebb;
   font-size: 3rem;
 }
 
@@ -126,13 +142,13 @@
 
 table {
   border-collapse: separate;
-  border-spacing: 90px;
+  border-spacing: 90px 40px;
 }
 
 table thead tr th {
   font-size: 1.5rem;
-  color: #b10707;
-  text-align: center;
+  color: #982649;
+  text-align: auto;
 }
 
 table tbody tr td {
@@ -152,12 +168,162 @@ table tbody tr td {
 .flags {
   width: 70px;
 }
+
+.button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff00;
+  border-radius: 25px;
+  /* Learned from https://www.w3schools.com/howto/howto_css_outline_buttons.asp */
+  border: 1px solid white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #eee;
+  }
+
+  .button:hover {
+   color: #a2aebb;
+   border: 1px solid #a2aebb;
+  }
+
+  /* Tournament Section */
+
+  .tournaments {
+    background-color: #fff;
+    padding: 5rem 0 5rem 0;
+  }
+  
+  .tournaments h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .tournaments h3 {
+    text-align: end;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #3976f8;
+  }
+  .tournament--results {
+    margin: 3rem 0 3rem 0;
+    padding: 0;
+  
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  
+    list-style-type: none;
+  }
+  
+  .tournament--result--images {
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .tournament--result--images:hover{
+    flex-basis: 20%;
+    height: 10rem;
+    width: 10rem;
+    background-color: #ff5e5e;
+  
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Form Section */
+
+  .contact{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: #d6dae0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200%;
+  }
+  
+  .form--grid{
+    opacity: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    grid-column-start: 2;
+    border: #9498B8 solid 2px;
+    text-align: center;
+    padding: 100px 100px 100px 100px;
+  }
+  
+  .form--grid h2{
+    color: #000000;
+    font-size: 30px;
+  }
+  
+  .contact--grid{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  
+  .part1{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto
+  }
+
+  .part1 ul {
+    list-style-type: none;
+  }
+
+  .contact--grid input{
+    font-size: 20px;
+    color: #9498B8;
+    margin: 10px;
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #9498B8 transparent 2px;
+    background-color: white;
+  }
+  
+  .contact--grid input:focus{
+    border: #9498B8 solid 2px;
+  }
+  
+  .contact--grid input::placeholder {
+    color: #9498B8;
+  }
+  
+  .contact--grid button {
+    font-size: 20px;
+    color: #9498B8;
+    margin: 10px;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #9498B8 transparent 2px;
+    background-color: white;
+    width: 15%;
+  }
+  
+  .contact--grid button:hover {
+    border: #9498B8 solid 2px;
+  }
+  
+  .buttoncontainer {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
 /* Footer Section */
 
 footer {
   padding: 4rem 0 4rem 0;
   background-color: #000000;
-  color: #e0e1dd;
+  color: #ffffff;
   text-align: center;
 }
 
